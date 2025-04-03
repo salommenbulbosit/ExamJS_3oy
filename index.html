@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+  <header>
+    <h1>Fake Store</h1>
+    <button id="theme-toggle">Dark Mode</button>
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Search for products...">
+        <button id="searchButton">🔍</button>
+    </div>
+    <select id="categoryFilter">
+        <option value="all">All Categories</option>
+    </select>
+    <select id="priceSort">
+        <option value="default">Sort by Price</option>
+        <option value="low">Low to High</option>
+        <option value="high">High to Low</option>
+    </select>
+</header>
+    <main>
+        <div id="loading">Loading...</div>
+        <div id="products"></div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
